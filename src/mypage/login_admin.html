@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <title>경남TP</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/javascript">
+  <meta http-equiv="Content-Type" content="text/css">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1 minimum-scale=1, maximum-scale=2">
+
+  <link rel="stylesheet" type="text/css" href="/lib/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/font.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/selectric.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/layout.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/style.css">
+
+  <script src="/lib/js/jquery-1.9.1.min.js"></script>
+  <script src="/lib/js/jquery-ui.min.js"></script>
+  <script src="/lib/js/jquery.selectric.min.js"></script>
+</head>
+<body>
+<div id="skipNavi">
+  <a href="#contents">본문 바로가기</a>
+  <a href="#header_wrap">주메뉴 바로가기</a>
+</div>
+<header id="header_wrap">
+  <div class="header_top">
+    <div class="layout_inner">
+      <h1>
+        <a href="/src/">경남 빅데이터 공유플랫폼</a>
+      </h1>
+
+      <div class="sidebar_cont">
+        <!-- 비회원 상태로 접속시 구조 -->
+        <div class="login_box">
+          <ul>
+            <li><a href="/src/mypage/login.html">로그인</a></li>
+            <li><a href="/src/mypage/join.html">회원가입</a></li>
+          </ul>
+        </div>
+        <!-- //비회원 상태로 접속시 구조 -->
+
+        <!-- 일반 사용자 로그인 시 구조 -->
+        <div class="sidebar_user js_dropdown" style="display: none;">
+          <div class="sidebar_user_profile"></div>
+          <button type="button" class="sidebar_user_btn js_dropdown_btn">Gil Dong, Hong</button>
+          <div class="sidebar_user_menu js_dropdown_list" style="display:none">
+            <ul>
+              <li><a href="#">Menu 01</a></li>
+              <li><a href="#">Menu 02</a></li>
+              <li><a href="#">Menu 03k</a></li>
+            </ul>
+            <button type="button">Logout</button>
+          </div>
+        </div>
+        <!-- //일반 사용자 로그인 시 구조 -->
+
+        <!-- 어드민 사용자 로그인 시 구조 -->
+        <div class="sidebar_admin" style="display: none;">
+          <div class="sidebar_user js_dropdown">
+            <div class="sidebar_admin_profile admin"></div>
+            <button type="button" class="sidebar_user_btn js_dropdown_btn">Gil Dong, Hong</button>
+            <div class="sidebar_user_menu js_dropdown_list" style="display:none">
+              <ul>
+                <li><a href="#">Menu 01</a></li>
+                <li><a href="#">Menu 02</a></li>
+                <li><a href="#">Menu 03k</a></li>
+              </ul>
+              <button type="button">Logout</button>
+            </div>
+          </div>
+          <button type="button" class="btn_admin_console" onclick="window.open('')">ADMIN CONSOLE</button>
+        </div>
+
+        <!-- //어드민 사용자 로그인 시 구조 -->
+
+      </div><!-- //sidebar_cont -->
+    </div><!-- //layout_inner -->
+  </div><!-- //header_top -->
+
+  <nav class="header_gnb_wrap">
+    <div class="header_gnb">
+      <div class="layout_inner">
+        <ul class="header_gnb_list">
+          <li>
+            <a href="/src/about/introduce.html"><span>센터 소개</span></a>
+            <ul class="depth2">
+              <li><a href="/src/about/introduce.html"><span>인사말</span></a></li>
+              <li><a href="/src/about/business.html">플랫폼 소개</a></li>
+              <li><a href="/src/about/organization.html">조직도</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/practice/reservation_list.html"><span>가상 실습실</span></a>
+            <ul class="depth2">
+              <li><a href="/src/practice/reservation_list.html">예약 신청 현황</a></li>
+              <li><a href="/src/practice/reservation_write.html">예약 신청서 작성</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/equipment/usg.html"><span>연구 &middot; 실습 장비 공유</span></a>
+            <ul class="depth2">
+              <li><a href="/src/equipment/usg.html">USG</a></li>
+              <li><a href="/src/equipment/gntp.html">경남 테크노파크</a></li>
+              <li><a href="/src/equipment/gn_local.html">경남 지역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/contest/contest.html"><span>공모전 &middot; 경진대회</span></a>
+            <ul class="depth2">
+              <li><a href="/src/contest/contest.html" style="margin-right:0;">공모전 &middot; 경진대회 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/community/notice.html"><span>커뮤니티</span></a>
+            <ul class="depth2">
+              <li><a href="/src/community/notice.html">공지사항</a></li>
+              <li><a href="/src/community/qna.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="btn_all_menu">ALL MENU</button>
+      </div><!-- //layout_inner -->
+    </div><!-- //header_gnb -->
+  </nav><!-- //header_gnb_wrap -->
+
+  <div class="all_menu_wrap" style="display: none;">
+    <div class="all_menu">
+      <div class="layout_inner">
+        <ul class="all_menu_list">
+          <li>
+            <a href="/src/about/introduce.html"><span>센터 소개</span></a>
+            <ul class="depth2">
+              <li><a href="/src/about/introduce.html"><span>인사말</span></a></li>
+              <li><a href="/src/about/business.html">플랫폼 소개</a></li>
+              <li><a href="/src/about/organization.html">조직도</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/practice/reservation_list.html"><span>가상 실습실</span></a>
+            <ul class="depth2">
+              <li><a href="/src/practice/reservation_list.html">예약 신청 현황</a></li>
+              <li><a href="/src/practice/reservation_write.html">예약 신청서 작성</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/equipment/usg.html"><span>연구 &middot; 실습 장비 공유</span></a>
+            <ul class="depth2">
+              <li><a href="/src/equipment/usg.html">USG</a></li>
+              <li><a href="/src/equipment/gntp.html">경남 테크노파크</a></li>
+              <li><a href="/src/equipment/gn_local.html">경남 지역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/contest/contest.html"><span>공모전 &middot; 경진대회</span></a>
+            <ul class="depth2">
+              <li><a href="/src/contest/contest.html" style="margin-right:0;">공모전 &middot; 경진대회 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/community/notice.html"><span>커뮤니티</span></a>
+            <ul class="depth2">
+              <li><a href="/src/community/notice.html">공지사항</a></li>
+              <li><a href="/src/community/qna.html">문의하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/mypage/mypage.html"><span>마이페이지</span></a>
+            <ul class="depth2">
+              <li><a href="/src/mypage/mypage.html">내 정보</a></li>
+              <li><a href="/src/mypage/password.html">비밀번호 변경</a></li>
+              <li><a href="/src/mypage/withdrawal.html">회원탈퇴</a></li>
+              <li><a href="/src/mypage/contest_list.html">공모전 신청현황</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="btn_all_close">ALL MENU</button>
+      </div><!-- //layout_inner -->
+    </div><!-- //all_menu -->
+  </div><!-- //all_menu_wrap -->
+</header><!-- //header_wrap -->
+
+
+<section id="location">
+  <div class="header_location">
+    <h2 class="layout_screen-out">Site Location</h2>
+    <div class="layout_inner layout_clearfix js_location">
+      <span>로그인</span>
+    </div>
+  </div><!-- //header_location -->
+
+</section>
+
+<section id="contetns">
+  <div class="layout_inner">
+    <div class="login_wrap">
+      <div class="login_tit">
+        관리자 로그인
+      </div>
+
+      <div class="login_account_wrap">
+        <div class="login_account admin">
+          <input type="text" class="input_style_01" placeholder="User ID">
+          <input type="password" class="input_style_01" placeholder="Password">
+        </div>
+
+        <div class="login_btn_wrap">
+          <button type="button" class="login_btn">LOGIN</button>
+          <ul>
+            <li><a href="/src/mypage/join_admin.html">관리자 회원가입</a></li>
+            <li><a href="#">아이디 찾기</a></li>
+            <li><a href="#">비밀번호 찾기</a></li>
+          </ul>
+        </div>
+      </div> <!-- //login_box -->
+    </div> <!-- //login_wrap -->
+
+
+  </div><!-- //layout_inner -->
+</section><!-- //#contetns -->
+
+
+<footer id="footer_wrap">
+  <div class="layout_inner">
+    <div class="box-links">
+      <ul>
+        <li><a href="#" target="_blank"><strong>개인정보처리방침</strong></a></li>
+        <li><a href="#" target="_blank">이메일 무단 수집 거부</a></li>
+        <li><a href="#" target="_blank">유관기관배너목록</a></li>
+      </ul>
+    </div>
+
+    <div class="box-links">
+      <ul>
+        <li>경남 창원시 의창구 창원대로 18번길 22(팔용동)</li>
+        <li>TEL : 1688-3360</li>
+        <li>FAX : 055. 262. 9669</li>
+        <li><a href="mailto:gntp@gntp.or.kr" target="_blank">E MAIL : gntp@gntp.or.kr</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      Copyright ⓒ 2014 재단법인 경남테크노파크 all rights reserved.
+    </div>
+
+    <div class="select_box_wrap">
+      <select name="" id="" class="select_box">
+        <option value="">전국 TP 사이트</option>
+        <option value="">전국 #1</option>
+        <option value="">전국 #2</option>
+        <option value="">전국 #3</option>
+        <option value="">전국 #4</option>
+        <option value="">전국 #5</option>
+      </select>
+
+      <select name="" id="" class="select_box">
+        <option value="">패밀리 사이트</option>
+        <option value="">패밀리 사이트 #1</option>
+        <option value="">패밀리 사이트 #2</option>
+        <option value="">패밀리 사이트 #3</option>
+        <option value="">패밀리 사이트 #4</option>
+        <option value="">패밀리 사이트 #5</option>
+      </select>
+    </div>
+  </div>
+</footer>
+
+
+<script src="/lib/js/jquery.script.js"></script>
+
+<script>
+  $('.login_btn').click(function (){
+    $('.login_box').hide();
+    $('.sidebar_admin').show();
+  })
+</script>
+
+</body>
+</html>

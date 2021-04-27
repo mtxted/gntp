@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <title>경남TP</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <meta http-equiv="Content-Type" content="text/javascript">
+  <meta http-equiv="Content-Type" content="text/css">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1 minimum-scale=1, maximum-scale=2">
+
+  <link rel="stylesheet" type="text/css" href="/lib/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/font.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/selectric.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/layout.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/lib/css/board.css">
+
+  <script src="/lib/js/jquery-1.9.1.min.js"></script>
+  <script src="/lib/js/jquery-ui.min.js"></script>
+  <script src="/lib/js/jquery.selectric.min.js"></script>
+</head>
+<body>
+<div id="skipNavi">
+  <a href="#contents">본문 바로가기</a>
+  <a href="#header_wrap">주메뉴 바로가기</a>
+</div>
+<header id="header_wrap">
+  <div class="header_top">
+    <div class="layout_inner">
+      <h1>
+        <a href="/src/">경남 빅데이터 공유플랫폼</a>
+      </h1>
+
+      <div class="sidebar_cont">
+        <!-- 비회원 상태로 접속시 구조 -->
+        <div class="login_box">
+          <ul>
+            <li><a href="/src/mypage/login.html">로그인</a></li>
+            <li><a href="/src/mypage/join.html">회원가입</a></li>
+          </ul>
+        </div>
+        <!-- //비회원 상태로 접속시 구조 -->
+
+        <!-- 일반 사용자 로그인 시 구조 -->
+        <div class="sidebar_user js_dropdown" style="display: none;">
+          <div class="sidebar_user_profile"></div>
+          <button type="button" class="sidebar_user_btn js_dropdown_btn">Gil Dong, Hong</button>
+          <div class="sidebar_user_menu js_dropdown_list" style="display:none">
+            <ul>
+              <li><a href="#">Menu 01</a></li>
+              <li><a href="#">Menu 02</a></li>
+              <li><a href="#">Menu 03k</a></li>
+            </ul>
+            <button type="button">Logout</button>
+          </div>
+        </div>
+        <!-- //일반 사용자 로그인 시 구조 -->
+
+        <!-- 어드민 사용자 로그인 시 구조 -->
+        <div class="sidebar_admin" style="display: none;">
+          <div class="sidebar_user js_dropdown">
+            <div class="sidebar_admin_profile admin"></div>
+            <button type="button" class="sidebar_user_btn js_dropdown_btn">Gil Dong, Hong</button>
+            <div class="sidebar_user_menu js_dropdown_list" style="display:none">
+              <ul>
+                <li><a href="#">Menu 01</a></li>
+                <li><a href="#">Menu 02</a></li>
+                <li><a href="#">Menu 03k</a></li>
+              </ul>
+              <button type="button">Logout</button>
+            </div>
+          </div>
+          <button type="button" class="btn_admin_console">ADMIN CONSOLE</button>
+        </div>
+
+        <!-- //어드민 사용자 로그인 시 구조 -->
+
+      </div><!-- //sidebar_cont -->
+    </div><!-- //layout_inner -->
+  </div><!-- //header_top -->
+
+  <nav class="header_gnb_wrap">
+    <div class="header_gnb">
+      <div class="layout_inner">
+        <ul class="header_gnb_list">
+          <li class="on">
+            <a href="/src/about/introduce.html"><span>센터 소개</span></a>
+            <ul class="depth2">
+              <li><a href="/src/about/introduce.html"><span>인사말</span></a></li>
+              <li><a href="/src/about/business.html">플랫폼 소개</a></li>
+              <li><a href="/src/about/organization.html">조직도</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/practice/reservation_list.html"><span>가상 실습실</span></a>
+            <ul class="depth2">
+              <li><a href="/src/practice/reservation_list.html">예약 신청 현황</a></li>
+              <li><a href="/src/practice/reservation_write.html">예약 신청서 작성</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/equipment/usg.html"><span>연구 &middot; 실습 장비 공유</span></a>
+            <ul class="depth2">
+              <li><a href="/src/equipment/usg.html">USG</a></li>
+              <li><a href="/src/equipment/gntp.html">경남 테크노파크</a></li>
+              <li><a href="/src/equipment/gn_local.html">경남 지역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/contest/contest.html"><span>공모전 &middot; 경진대회</span></a>
+            <ul class="depth2">
+              <li><a href="/src/contest/contest.html" style="margin-right:0;">공모전 &middot; 경진대회 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/community/notice.html"><span>커뮤니티</span></a>
+            <ul class="depth2">
+              <li><a href="/src/community/notice.html">공지사항</a></li>
+              <li><a href="/src/community/qna.html">문의하기</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="btn_all_menu">ALL MENU</button>
+      </div><!-- //layout_inner -->
+    </div><!-- //header_gnb -->
+  </nav><!-- //header_gnb_wrap -->
+
+  <div class="all_menu_wrap" style="display: none;">
+    <div class="all_menu">
+      <div class="layout_inner">
+        <ul class="all_menu_list">
+          <li>
+            <a href="/src/about/introduce.html"><span>센터 소개</span></a>
+            <ul class="depth2">
+              <li><a href="/src/about/introduce.html"><span>인사말</span></a></li>
+              <li><a href="/src/about/business.html">플랫폼 소개</a></li>
+              <li><a href="/src/about/organization.html">조직도</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/practice/reservation_list.html"><span>가상 실습실</span></a>
+            <ul class="depth2">
+              <li><a href="/src/practice/reservation_list.html">예약 신청 현황</a></li>
+              <li><a href="/src/practice/reservation_write.html">예약 신청서 작성</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/equipment/usg.html"><span>연구 &middot; 실습 장비 공유</span></a>
+            <ul class="depth2">
+              <li><a href="/src/equipment/usg.html">USG</a></li>
+              <li><a href="/src/equipment/gntp.html">경남 테크노파크</a></li>
+              <li><a href="/src/equipment/gn_local.html">경남 지역</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/contest/contest.html"><span>공모전 &middot; 경진대회</span></a>
+            <ul class="depth2">
+              <li><a href="/src/contest/contest.html" style="margin-right:0;">공모전 &middot; 경진대회 안내</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/community/notice.html"><span>커뮤니티</span></a>
+            <ul class="depth2">
+              <li><a href="/src/community/notice.html">공지사항</a></li>
+              <li><a href="/src/community/qna.html">문의하기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="/src/mypage/mypage.html"><span>마이페이지</span></a>
+            <ul class="depth2">
+              <li><a href="/src/mypage/mypage.html">내 정보</a></li>
+              <li><a href="/src/mypage/password.html">비밀번호 변경</a></li>
+              <li><a href="/src/mypage/withdrawal.html">회원탈퇴</a></li>
+              <li><a href="/src/mypage/contest_list.html">공모전 신청현황</a></li>
+            </ul>
+          </li>
+        </ul>
+        <button type="button" class="btn_all_close">ALL MENU</button>
+      </div><!-- //layout_inner -->
+    </div><!-- //all_menu -->
+  </div><!-- //all_menu_wrap -->
+</header><!-- //header_wrap -->
+
+
+<section id="location">
+  <div class="header_location">
+    <h2 class="layout_screen-out">Site Location</h2>
+    <div class="layout_inner layout_clearfix js_location">
+      <a href="javascript:void(0)">센터 소개</a>
+      <span>플랫폼 소개</span>
+    </div>
+  </div><!-- //header_location -->
+</section>
+
+<section id="contetns">
+  <div class="layout_inner">
+    <div class="cont_common_text-group">
+      <h3 class="common_tit">센터 소개</h3>
+      <div class="cont_common_text-group_block intro">
+        <p class="cont_common_text-group_tit">목적</p>
+        <ul>
+          <li>경남형 빅데이터 & 플랫폼 비즈니스 기반을 마련하여 다양한 분야에 빅데이터 공급체계를 구축함으로써 지역 내 산업혁신 및 지역혁신 토대 마련</li>
+          <li>지역 내 대학들에게 수도권 대학과의 디지털 인프라 격차를 일부 해소할 수 있는 기반 구축으로 지역 내 대학들의 연구역량 확보</li>
+        </ul>
+
+        <p class="cont_common_text-group_tit">필요성</p>
+        <ul>
+          <li>정부는 D.N.A (Data, Network, AI)를 기반으로 다양한 신산업 육성을 위한 사업들을 추진하고 있으며, 경남에서도 전 분야에서 관련 사업을
+            추진하고 있으나 이를 체계적으로 조정하고 관리할 수 있는 컨트롤 센터 부재</li>
+          <li>경남 빅데이터 공유 플랫폼 구축을 통하여 지역 내 수집이 가능한 모든 데이터를 수집, 정제하여 보관한 후에 필요한 전 영역에 관련 빅데이터
+            를 공급하는 시스템 구축 필요</li>
+          <li>제조업 이외에도 전반적으로 AI·Big Data기술을 결합하여, 스마트시티, 대민서비스, 지역 및 사회 문제해결 등을 추진하고, 이를 기반으로
+            다양한 스타트업 기업들이 출현하고 있기 때문에 이를 위한 지원 및 육성 체계 마련 필요</li>
+        </ul>
+      </div>
+    </div><!-- //cont_common_text-group -->
+
+    <div class="cont_common_text-group">
+      <h3 class="common_tit">플랫폼 소개</h3>
+      <div class="cont_common_text-group_block">
+        <ul>
+          <li>경남 빅데이터 공유플랫폼은 클라우드 가상실습 환경을 지원합니다.</li>
+          <li>클라우드 기반 빅데이터를 수집·분석할 수 있는 학습 환경을 제공하고, 제공된 가상실습 환경에서 학생들이 즉시 수업이 가능합니다.</li>
+        </ul>
+      </div>
+      <div class="image_box">
+        <img src="/lib/image/about/business_img_01.png" alt="플랫폼 소개 이미지">
+      </div>
+    </div><!-- //cont_common_text-group -->
+
+    <div class="cont_common_text-group">
+      <h3 class="common_tit">플랫폼 활용</h3>
+      <div class="cont_common_text-group_block">
+        <ul>
+          <li>다양한 분야에 빅데이터 공급체계를 구축하고 확보된 데이터를 활용하여 지속가능한 데이터 공급체계 구축</li>
+          <li>디지털 인프라 기반 구축으로 지역 내 대학들의 연구역량 확보</li>
+          <li>제조산업 분야와 연관된 데이터를 수집하여 산업군 내 기초 분석자료로 활용</li>
+          <li>지역 중소기업에게도 제공할 수 있는 데이터를 공급하여 기술개발 기반 구축</li>
+        </ul>
+      </div>
+      <div class="image_box">
+        <img src="/lib/image/about/business_img_02.png" alt="플랫폼 활용 이미지">
+      </div>
+    </div><!-- //cont_common_text-group -->
+
+    <div class="cont_common_text-group">
+      <h3 class="common_tit">플랫폼 구성</h3>
+      <div class="cont_common_text-group_block">
+
+      </div>
+      <div class="image_box">
+        <img src="/lib/image/about/business_img_03.png" alt="플랫폼 구성 이미지 #1">
+      </div>
+
+      <div class="image_box mt40">
+        <img src="/lib/image/about/business_img_04.png" alt="플랫폼 구성 이미지 #2">
+      </div>
+    </div><!-- //cont_common_text-group -->
+
+  </div><!-- //layout_inner -->
+</section><!-- //#contetns -->
+
+<footer id="footer_wrap">
+  <div class="layout_inner">
+    <div class="box-links">
+      <ul>
+        <li><a href="#" target="_blank"><strong>개인정보처리방침</strong></a></li>
+        <li><a href="#" target="_blank">이메일 무단 수집 거부</a></li>
+        <li><a href="#" target="_blank">유관기관배너목록</a></li>
+      </ul>
+    </div>
+
+    <div class="box-links">
+      <ul>
+        <li>경남 창원시 의창구 창원대로 18번길 22(팔용동)</li>
+        <li>TEL : 1688-3360</li>
+        <li>FAX : 055. 262. 9669</li>
+        <li><a href="mailto:gntp@gntp.or.kr" target="_blank">E MAIL : gntp@gntp.or.kr</a></li>
+      </ul>
+    </div>
+
+    <div class="copyright">
+      Copyright ⓒ 2014 재단법인 경남테크노파크 all rights reserved.
+    </div>
+
+    <div class="select_box_wrap">
+      <select name="" id="" class="select_box">
+        <option value="">전국 TP 사이트</option>
+        <option value="">전국 #1</option>
+        <option value="">전국 #2</option>
+        <option value="">전국 #3</option>
+        <option value="">전국 #4</option>
+        <option value="">전국 #5</option>
+      </select>
+
+      <select name="" id="" class="select_box">
+        <option value="">패밀리 사이트</option>
+        <option value="">패밀리 사이트 #1</option>
+        <option value="">패밀리 사이트 #2</option>
+        <option value="">패밀리 사이트 #3</option>
+        <option value="">패밀리 사이트 #4</option>
+        <option value="">패밀리 사이트 #5</option>
+      </select>
+    </div>
+  </div>
+</footer>
+
+<script src="/lib/js/jquery.script.js"></script>
+
+</body>
+</html>
