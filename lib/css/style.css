@@ -366,7 +366,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     left: 0;
     bottom: 0;
     width: 40px;
-    background: url(lib/image/mypage/tab_bg.png) no-repeat left top;
+    background: url(../lib/image/mypage/tab_bg.png) no-repeat left top;
 }
 .top_tab > *::after {
     content: " ";
@@ -375,7 +375,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     right: 0;
     bottom: 0;
     width: 40px;
-    background: url(lib/image/mypage/tab_bg.png) no-repeat right -100px;
+    background: url(../lib/image/mypage/tab_bg.png) no-repeat right -100px;
 }
 .top_tab > *:first-child ~ * {
     margin-left: -41px;
@@ -394,7 +394,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     display: block;
     min-width: 120px;
     height: 100%;
-    background: url(lib/image/mypage/tab_bg.png) repeat-x left -300px;
+    background: url(../lib/image/mypage/tab_bg.png) repeat-x left -300px;
 }
 .top_tab > *.on {
     height: 35px;
@@ -493,11 +493,11 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
 }
 
 .login_account.trainee {
-    background: url(lib/image/mypage/login_ico_trainee.png) no-repeat;
+    background: url(../lib/image/mypage/login_ico_trainee.png) no-repeat;
 }
 
 .login_account.admin {
-    background: url(lib/image/mypage/login_ico_admin.png) no-repeat;
+    background: url(../lib/image/mypage/login_ico_admin.png) no-repeat;
 }
 
 .login_account input {
@@ -605,7 +605,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
 .join_finish {
     padding: 80px 200px 80px 415px;
     border-top: 1px solid #3a4147;
-    background: url(lib/image/mypage/join_ico_finish.png) no-repeat 200px center;
+    background: url(../lib/image/mypage/join_ico_finish.png) no-repeat 200px center;
 }
 
 .join_finish h3 {
@@ -740,7 +740,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
 .check_finish {
     padding: 80px 200px 80px 345px;
     border-top: 1px solid #3a4147;
-    background: url(lib/image/mypage/check_ico_finish.png) no-repeat 130px center;
+    background: url(../lib/image/mypage/check_ico_finish.png) no-repeat 130px center;
 }
 
 .check_finish h3 {
@@ -807,7 +807,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
 .withdrawal_finish {
     padding: 80px 290px 80px 415px;
     border-top: 1px solid #3a4147;
-    background: url(lib/image/mypage/join_ico_finish.png) no-repeat 200px center;
+    background: url(../lib/image/mypage/join_ico_finish.png) no-repeat 200px center;
 }
 
 .withdrawal_finish h3 {
@@ -997,7 +997,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     width: 17px;
     height: 16px;
     border: 0;
-    background: url(lib/image/board/ico_search.png) no-repeat 98% center;
+    background: url(../lib/image/board/ico_search.png) no-repeat 98% center;
     position: absolute;
     right: 10px;
     top: 50%;
@@ -1245,7 +1245,7 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     position: absolute;
     right: 2px;
     bottom: 2px;
-    background: url(lib/image/contest/btn_search.png) no-repeat;
+    background: url(../lib/image/contest/btn_search.png) no-repeat;
 }
 
 .contest_view_summary {

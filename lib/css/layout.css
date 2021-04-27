@@ -700,7 +700,7 @@
 #visual {
     width: 100%;
     height: 550px;
-    background: url(lib/image/main/main_visual.png) no-repeat;
+    background: url(../lib/image/main/main_visual.png) no-repeat;
     background-size: cover;
 }
 
@@ -768,7 +768,7 @@
     border-radius: 3px;
     background: #fff;
     text-indent: -9999em;
-    background: url(lib/image/main/main_arr.png) no-repeat center center;
+    background: url(../lib/image/main/main_arr.png) no-repeat center center;
     vertical-align: middle;
 }
 
@@ -802,13 +802,13 @@
 }
 
 #banner_wrap ul li .banner_01 {
-    background: url(lib/image/main/banner_01.png) no-repeat 90% 145%;
+    background: url(../lib/image/main/banner_01.png) no-repeat 90% 145%;
     border-right: 1px solid #ddd;
 }
 
 #banner_wrap ul li .banner_02 {
     padding-left: 40px;
-    background: url(lib/image/main/banner_02.png) no-repeat 90% 145%;
+    background: url(../lib/image/main/banner_02.png) no-repeat 90% 145%;
 }
 
 #banner_wrap ul li h4 {
@@ -829,7 +829,7 @@
     margin-top: 35px;
     border: 0;
     border-radius: 100%;
-    background: url(lib/image/main/main_arr_right.png) no-repeat center center #00c7ff;
+    background: url(../lib/image/main/main_arr_right.png) no-repeat center center #00c7ff;
 }
 
 #main_leaflet {
@@ -884,7 +884,7 @@
     top: 50%;
     right: -15px;
     transform: translateY(-50%);
-    background: url(lib/image/main/main_arr_right_cyan.png) no-repeat;
+    background: url(../lib/image/main/main_arr_right_cyan.png) no-repeat;
 }
 
 #main_leaflet ul li.about {
@@ -906,7 +906,7 @@
     height: 24px;
     border: 1px solid #ddd;
     border-radius: 3px;
-    background: url(lib/image/main/main_plus.png) no-repeat center center;
+    background: url(../lib/image/main/main_plus.png) no-repeat center center;
     float: right;
 }
 

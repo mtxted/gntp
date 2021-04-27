@@ -188,7 +188,7 @@
 }
 
 .board_list td.td_subject a.new {
-    background: url(lib/image/board/ico_new.png) no-repeat left center;
+    background: url(../lib/image/board/ico_new.png) no-repeat left center;
 }
 
 .board_list td.td_subject a:hover {
@@ -282,7 +282,7 @@
     overflow: hidden;
     text-indent: -9999px;
     white-space: nowrap;
-    background: url(lib/image/board/btn_ico_pagenation.png) no-repeat center top;
+    background: url(../lib/image/board/btn_ico_pagenation.png) no-repeat center top;
 }
 
 .pagenation_wrap .pagenation_btn:hover {
@@ -663,7 +663,7 @@
     overflow: hidden;
     text-indent: -9999px;
     white-space: nowrap;
-    background-image: url(lib/image/board/arr_sort_asc.png);
+    background-image: url(../lib/image/board/arr_sort_asc.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #ccd0d7;
@@ -761,7 +761,7 @@
     width: 37px;
     height: 37px;
     border: 0;
-    background: url(lib/image/common/popup_close.png) no-repeat center center;
+    background: url(../lib/image/common/popup_close.png) no-repeat center center;
 }
 .pop_wrap .pop_common {
     padding: 4px;
@@ -1499,5 +1499,5 @@
     margin-top: -5px;
     color: #f45343;
     font: 12px "Dotum", sans-serif;
-    background: url(lib/image/common/ico_required.png) no-repeat left top;
+    background: url(../lib/image/common/ico_required.png) no-repeat left top;
 }
