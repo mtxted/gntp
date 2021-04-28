@@ -292,6 +292,10 @@ select { /* 1 */
     text-transform: none;
 }
 
+
+/*select{-webkit-appearance:none; -mox-appearance:none; appearance:none; outline: none;}*/
+
+
 /**
  * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
  *    controls in Android 4.

@@ -561,6 +561,7 @@
     background: url(../image/common/header_location_bg.png) no-repeat center center;
     font-size: 26px;
     overflow: hidden;
+    background-size: cover;
 }
 
 .header_location a {

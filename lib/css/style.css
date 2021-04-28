@@ -1025,6 +1025,11 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     font-size: 13px;
     vertical-align: top;
     color: #a4aab0;
+    background: url(../image/common/select_arr.png) no-repeat  85% center #fff;
+    -webkit-appearance:none;
+    -mox-appearance:none;
+    appearance:none;
+    outline: none;
 }
 
 .rsv_input_02 {
@@ -1043,6 +1048,11 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     font-size: 13px;
     vertical-align: top;
     color: #a4aab0;
+    background: url(../image/common/select_arr.png) no-repeat  85% center #fff;
+    -webkit-appearance:none;
+    -mox-appearance:none;
+    appearance:none;
+    outline: none;
 }
 
 .btn_request {
