@@ -204,22 +204,21 @@
       <ul>
         <li>
           <input type="text" class="rsv_input_01" placeholder="MM/DD/YY">
-          <select name="" id="" class="rsv_select_01">
-            <option value="">01:00</option>
-          </select>
+          <img src="../../lib/image/contest/table_button_calendar.png" alt="" class="table_button_calendar" style="display: none;">
+          <img src="../../lib/image/contest/search_box_img.png" alt="" class="select_img">
+          <img src="../../lib/image/contest/search_box_img_open.png" alt="" class="select_img_open">
           &nbsp;
           ~
           &nbsp;
           <input type="text" class="rsv_input_01" placeholder="MM/DD/YY">
-          <select name="" id="" class="rsv_select_01">
-            <option value="">01:00</option>
-          </select>
+          <img src="../../lib/image/contest/table_button_calendar.png" alt="" class="table_button_calendar table_button_calendar_02" style="display: none;">
+          <img src="../../lib/image/contest/search_box_img.png" alt="" class="select_img_02">
+          <img src="../../lib/image/contest/search_box_img_open.png" alt="" class="select_img_open_02">
         </li>
         <li>
-          <input type="text" class="rsv_input_02">
-          <select name="" id="" class="rsv_select_02">
-            <option value="">상태</option>
-          </select>
+          <input type="text" class="rsv_input_02" placeholder="ID">
+          <img src="../../lib/image/contest/search_box_img_big.png" alt="" class="select_big_01">
+          <img src="../../lib/image/contest/search_box_img_big_open.png" alt="" class="select_big_open_01">
         </li>
         <li>
           <button type="button" class="contest_button">검색</button>
@@ -287,7 +286,10 @@
           <td>2021.03.31 12:00</td>
           <td style="border-right: 1px dotted #dce1e6;">30</td>
           <td>-</td>
-          <td class="txt_left"><span class="status g3">반려</span></td>
+          <td class="txt_left caption">
+            <span class="status g3">반려</span>
+            <img src="../../lib/image/common/caption_01.png" alt="" class="caption_img">
+          </td>
           <td>-</td>
           <td>-</td>
           <td>-</td>
@@ -491,6 +493,49 @@
   </div><!-- popup -->
 </div><!-- popup -->
 
+<div class="pop_wrap ui-draggable ui-draggable-handle pop_chk pop_lec" id="popupVMCreateChk" style="width:510px;">
+  <div class="pop_common">
+    <div class="pop_body">
+      <div class="pop_cont pop_cont_scroll">
+        <p class="vmchk_txt">30일 자동 연장신청 됩니다. 연장신청 하시겠습니까?</p>
+      </div><!-- pop_cont -->
+      <div class="pop_btns">
+        <button type="button" class="btn_action">취소</button>
+        <button type="button" class="btn_action">확인</button>
+      </div>
+    </div><!-- pop_body -->
+  </div><!-- popup -->
+</div><!-- popup -->
+
+
+<div class="pop_wrap ui-draggable ui-draggable-handle pop_chk pop_lec" id="popupReservation" style="width:310px;">
+  <div class="pop_common">
+    <div class="pop_body">
+      <div class="pop_cont pop_cont_scroll">
+        <p class="vmchk_txt">예약 취소하시겠습니까?</p>
+      </div><!-- pop_cont -->
+      <div class="pop_btns">
+        <button type="button" class="btn_action">취소</button>
+        <button type="button" class="btn_action">확인</button>
+      </div>
+    </div><!-- pop_body -->
+  </div><!-- popup -->
+</div><!-- popup -->
+
+<div class="pop_wrap ui-draggable ui-draggable-handle pop_chk pop_lec" id="popupEnd" style="width:310px;">
+  <div class="pop_common">
+    <div class="pop_body">
+      <div class="pop_cont pop_cont_scroll">
+        <p class="vmchk_txt">이용 종료하시겠습니까?</p>
+      </div><!-- pop_cont -->
+      <div class="pop_btns">
+        <button type="button" class="btn_action">취소</button>
+        <button type="button" class="btn_action">확인</button>
+      </div>
+    </div><!-- pop_body -->
+  </div><!-- popup -->
+</div><!-- popup -->
+
 <script src="../../lib/js/jquery.script.js"></script>
 
 <script type="text/javascript">
@@ -527,6 +572,57 @@
   $('.btn_pop_close, .btn_action').click(function(){
     $('.pop_wrap').hide();
   });
+
+  $('.rsv_input_01').click(function (){
+    $(this).next('.table_button_calendar').show();
+  });
+
+  $('.table_button_calendar').click(function (){
+    $(this).hide();
+  });
+
+  $('.btn_extension').click(function (){
+    $('#popupVMCreateChk').show();
+  })
+
+  $('.btn_rsv_cancel').click(function (){
+    $('#popupReservation').show();
+  })
+
+  $('.btn_end').click(function (){
+    $('#popupEnd').show();
+  })
+
+  $('.select_img').click(function (){
+    $(this).attr('src', '../../lib/image/contest/search_box_img_over.png')
+    $('.select_img_open').show();
+  })
+
+  $('.select_img_02').click(function (){
+    $(this).attr('src', '../../lib/image/contest/search_box_img_over.png')
+    $('.select_img_open_02').show();
+  })
+
+  $('.select_img_open').click(function (){
+    $('.select_img').attr('src', '../../lib/image/contest/search_box_img.png')
+    $(this).hide();
+  })
+
+  $('.select_img_open_02').click(function (){
+    $('.select_img_02').attr('src', '../../lib/image/contest/search_box_img.png')
+    $(this).hide();
+  })
+
+  $('.select_big_01').click(function (){
+    $(this).attr('src', '../../lib/image/contest/search_box_img_big_over.png')
+    $('.select_big_open_01').show();
+  })
+
+  $('.select_big_open_01').click(function (){
+    $('.select_big_01').attr('src', '../../lib/image/contest/search_box_img_big.png')
+    $(this).hide();
+  })
+
 </script>
 
 </body>

@@ -547,6 +547,21 @@
     text-align: left;
 }
 
+.tb_style_03 td.caption {
+    position: relative;
+}
+
+.tb_style_03 td.caption .caption_img {
+    position: absolute;
+    top: 38px;
+    left: 10px;
+    z-index: 20;
+    display: none;
+}
+.tb_style_03 td.caption:hover .caption_img {
+    display: block;
+}
+
 .tb_style_03 td .blue {
     width: 40px;
     height: 25px;
@@ -754,6 +769,20 @@
     left: 0;
     background: rgba(0, 0, 0, 0.7);
 }
+.pop_chk {
+    top: 150px;
+}
+.pop_chk:before {
+    content: " ";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.0);
+}
+
 .pop_wrap .btn_pop_close {
     position: absolute;
     top: 4px;
@@ -782,8 +811,8 @@
 }
 .pop_wrap .pop_common .pop_body .pop_btns {
     position: relative;
-    height: 74px;
-    padding: 14px 10px 0;
+    height: 60px;
+    padding: 10px 10px 0;
     border-top: 1px solid #dfe6e8;
     background: #f0f4f6;
     text-align: center;
@@ -1500,4 +1529,27 @@
     color: #f45343;
     font: 12px "Dotum", sans-serif;
     background: url(../image/common/ico_required.png) no-repeat left top;
+}
+
+
+.vmchk_txt {
+    padding: 25px 10px;
+    font-size: 20px;
+    color: #071e3f;
+    text-align: center;
+}
+
+.pop_chk .pop_common {
+    padding: 2px;
+}
+
+.pop_wrap.pop_chk .pop_common .pop_body .btn_action {
+    min-width: 90px;
+    height: 35px;
+    padding: 4px;
+    border-radius: 4px;
+    background: #fff;
+    color: #071e3f;
+    font-size: 13px;
+    border: 1px solid #071e3f;
 }

@@ -95,7 +95,7 @@
               <li><a href="../about/organization.html">조직도</a></li>
             </ul>
           </li>
-          <li class="on">
+          <li>
             <a href="../practice/reservation_list.html"><span>가상 실습실</span></a>
             <ul class="depth2">
               <li><a href="../practice/reservation_list.html">예약 신청 현황</a></li>
@@ -116,7 +116,7 @@
               <li><a href="../contest/contest.html" style="margin-right:0;">공모전 &middot; 경진대회 안내</a></li>
             </ul>
           </li>
-          <li>
+          <li class="on">
             <a href="../community/notice.html"><span>커뮤니티</span></a>
             <ul class="depth2">
               <li><a href="../community/notice.html">공지사항</a></li>
@@ -190,8 +190,8 @@
   <div class="header_location">
     <h2 class="layout_screen-out">Site Location</h2>
     <div class="layout_inner layout_clearfix js_location">
-      <a href="javascript:void(0)">가상 실습실</a>
-      <span>예약 신청서 작성</span>
+      <a href="javascript:void(0)">커뮤니티</a>
+      <span>문의하기</span>
     </div>
   </div><!-- //header_location -->
 
@@ -199,7 +199,8 @@
 
 <section id="contetns">
   <div class="layout_inner">
-    <h3 class="board_tit">예약 신청서 작성</h3>
+
+    <h3 class="board_tit">문의글 쓰기</h3>
     <div class="join_wrap mypage_wrap">
       <div class="join_box_wrap">
         <table class="tb_style_02">
@@ -210,69 +211,36 @@
             <col style="width:35%">
           </colgroup>
           <tr>
-            <th>아이디</th>
-            <td>
+            <th>제목</th>
+            <td colspan="3">
               <span class="mypage_info">user010</span>
             </td>
+          </tr>
+          <tr>
             <th>이름</th>
             <td>
-              <span class="mypage_info">홍길동</span>
+              <input type="text" class="input_style_02" value="">
+            </td>
+            <th>이메일</th>
+            <td>
+              <input type="text" class="input_style_02" value="">
             </td>
           </tr>
           <tr>
-            <th>강의/연구</th>
-            <td style="position: relative">
-              <img src="../../lib/image/contest/contest_view_01.png" alt="" class="contest_view_01">
-              <img src="../../lib/image/contest/contest_view_01_open.png" alt="" class="contest_view_01_open">
-            </td>
-            <th>VM 수량</th>
-            <td style="position: relative">
-              <img src="../../lib/image/contest/contest_view_02.png" alt="" class="contest_view_02">
-              <img src="../../lib/image/contest/contest_view_02_open.png" alt="" class="contest_view_02_open">
-            </td>
-          </tr>
-          <tr>
-            <th>이용시간</th>
-            <td colspan="3" style="position: relative">
-              <input type="text" class="req_input_01" placeholder="MM/DD/YY">
-              <img src="../../lib/image/contest/table_button_calendar.png" alt="" class="table_button_calendar table_button_calendar_03" style="display: none;">
-              <img src="../../lib/image/contest/contest_view_03.png" alt="" class="contest_view_03">
-              <img src="../../lib/image/contest/contest_view_03_open.png" alt="" class="contest_view_03_open">
-              &nbsp;
-              ~
-              &nbsp;
-              <input type="text" class="req_input_01 req_input_02" placeholder="MM/DD/YY">
-              <img src="../../lib/image/contest/table_button_calendar.png" alt="" class="table_button_calendar table_button_calendar_04" style="display: none;">
-              <img src="../../lib/image/contest/contest_view_03.png" alt="" class="contest_view_04">
-              <img src="../../lib/image/contest/contest_view_03_open.png" alt="" class="contest_view_04_open">
-            </td>
-          </tr>
-          <tr>
-            <th>비밀번호</th>
+            <th>문의내용</th>
             <td colspan="3">
-              <input type="password" class="input_style_02" placeholder="비밀번호를 입력해주세요.">
-            </td>
-          </tr>
-          <tr>
-            <th rowspan="2" style="border-bottom: 1px solid #0a2348;">신청사유 선택</th>
-            <td colspan="3" style="position: relative">
-              <img src="../../lib/image/contest/contest_view_04.png" alt="" class="contest_view_05">
-              <img src="../../lib/image/contest/contest_view_04_open.png" alt="" class="contest_view_05_open">
-            </td>
-          </tr>
-          <tr>
-            <td colspan="3">
-              <textarea name="txt_area" id="" class="textarea" placeholder="기타 사유를 500자 내외로 입력해주세요."></textarea>
+              <textarea name="" id="" class="textarea" style="height: 250px; border-radius: 5px;"></textarea>
             </td>
           </tr>
         </table>
 
         <div class="btn_wrap">
-          <button class="btn_cancel" onclick="location.href='reservation_list.html'">취소</button>
-          <button class="btn_summit" onclick="location.href='reservation_list.html'">완료</button>
+          <button class="btn_cancel" onclick="location.href='qna.html'">취소</button>
+          <button class="btn_summit" onclick="location.href='qna.html'">저장</button>
         </div>
       </div><!-- //join_box_wrap -->
     </div> <!-- //login_wrap -->
+
   </div><!-- //layout_inner -->
 </section><!-- //#contetns -->
 
@@ -322,70 +290,14 @@
   </div>
 </footer>
 
+
 <script src="../../lib/js/jquery.script.js"></script>
 
 <script>
-  $('.contest_view_01').click(function (){
-    $(this).attr('src', '../../lib/image/contest/contest_view_01_over.png')
-    $('.contest_view_01_open').show();
+  $('.qna_action').click(function (){
+    $('.qna_open').hide();
+    $(this).parents().parents().next().slideDown();
   })
-
-  $('.contest_view_01_open').click(function (){
-    $('.contest_view_01').attr('src', '../../lib/image/contest/contest_view_01.png')
-    $(this).hide();
-  })
-
-  $('.contest_view_02').click(function (){
-    $(this).attr('src', '../../lib/image/contest/contest_view_02_over.png')
-    $('.contest_view_02_open').show();
-  })
-
-  $('.contest_view_02_open').click(function (){
-    $('.contest_view_02').attr('src', '../../lib/image/contest/contest_view_02.png')
-    $(this).hide();
-  })
-
-  $('.contest_view_03').click(function (){
-    $(this).attr('src', '../../lib/image/contest/contest_view_03_over.png')
-    $('.contest_view_03_open').show();
-  })
-
-  $('.contest_view_03_open').click(function (){
-    $('.contest_view_03').attr('src', '../../lib/image/contest/contest_view_03.png')
-    $(this).hide();
-  })
-
-  $('.contest_view_04').click(function (){
-    $(this).attr('src', '../../lib/image/contest/contest_view_03_over.png')
-    $('.contest_view_04_open').show();
-  })
-
-  $('.contest_view_04_open').click(function (){
-    $('.contest_view_04').attr('src', '../../lib/image/contest/contest_view_03.png')
-    $(this).hide();
-  })
-
-  $('.contest_view_05').click(function (){
-    $(this).attr('src', '../../lib/image/contest/contest_view_04_over.png')
-    $('.contest_view_05_open').show();
-  })
-
-  $('.contest_view_05_open').click(function (){
-    $('.contest_view_05').attr('src', '../../lib/image/contest/contest_view_04.png')
-    $(this).hide();
-  })
-
-  $('.req_input_01').click(function (){
-    $(this).next('.table_button_calendar_03').show();
-  });
-
-  $('.req_input_02').click(function (){
-    $(this).next('.table_button_calendar_04').show();
-  });
-
-  $('.table_button_calendar').click(function (){
-    $(this).hide();
-  });
 </script>
 
 </body>
