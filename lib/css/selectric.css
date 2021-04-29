@@ -191,8 +191,9 @@
 .selectric-items li {
   display: block;
   padding: 10px;
-  color: #666;
+  color: #0a2348;
   cursor: pointer;
+  background: #fff;
 }
 
 .selectric-items li.selected {
