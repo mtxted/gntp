@@ -130,22 +130,51 @@
     color: #bdc1c8;
 }
 
-.tb_style_02 select.select_year {
-    width: 40%;
+.tb_style_02 .select_year {
+    width: 42%;
     margin-right: 3px;
+    float: left;
 }
 
-.tb_style_02 select.select_month {
-    width:28%;
+.tb_style_02 .select_month {
+    width:28.15%;
     margin-right: 3px;
+    float: left;
 }
 
-.tb_style_02 select.select_day {
-    width:28%;
+.tb_style_02 .select_day {
+    width:28.15%;
+    float: left;
 }
 
 .tb_style_02 .mypage_info {
     padding-left: 15px;
+}
+
+.tb_style_02 .select_wrap {
+    border: 1px solid #dadfe3;
+    border-radius: 3px;
+}
+
+.tb_style_02 .selectric {
+    background: #fff;
+}
+.tb_style_02 .selectric .label {
+    height: 38px;
+    margin-left: 15px;
+    line-height: 38px;
+    color: #c1c4ca;
+    font-size: 14px;
+}
+
+.tb_style_02 .selectric .button {
+    height: 38px;
+    line-height: 38px;
+    background: url(../image/common/select_arr.png) no-repeat 70% center #fff;
+}
+
+.tb_style_02 .selectric .button:after {
+    display: none;
 }
 
 .board_list {

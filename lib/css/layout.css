@@ -713,9 +713,14 @@
     color: #031836;
     display: inline-block;
 }
+.select_box_wrap .select_wrap .selectric {
+    background: #fff;
+}
+
 .select_box_wrap .select_wrap .selectric .label {
     height: 33px;
     line-height: 33px;
+
 }
 
 .select_box_wrap .select_wrap .selectric .button:after {
