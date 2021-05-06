@@ -31,7 +31,7 @@
     z-index: 3;
     top: 0;
     left: 0;
-    width: 210px;
+    width: 150px;
     height: 70px;
     background: url(../image/common/top_logo.png) no-repeat left center;
     overflow: hidden;
@@ -94,7 +94,7 @@
 }
 
 .login_box ul li a:hover {
-    color: #367be2;
+    color: #6748c1;
     font-weight: bold;
     transition: 0.2s all ease-out;
 }
@@ -193,7 +193,7 @@
     text-overflow: ellipsis;
 }
 .sidebar_cont .sidebar_user_btn:hover {
-    color: #075ed4;
+    color: #6748c1;
     background-position-y: -20px;
 }
 .sidebar_cont .sidebar_user_menu {
@@ -223,7 +223,7 @@
     text-decoration: none;
 }
 .sidebar_cont .sidebar_user_menu ul li a:hover {
-    color: #075ed4;
+    color: #6748c1;
 }
 .sidebar_cont .sidebar_user_menu button {
     width: 100%;
@@ -237,7 +237,7 @@
     transition: background 0.2s;
 }
 .sidebar_cont .sidebar_user_menu button:hover {
-    background: #075ed4;
+    background: #6748c1;
 }
 
 /* NAVIGATION */
@@ -264,7 +264,7 @@
 .header_gnb.on:after {
     content: '';
     width: 100%;
-    height: 151px;
+    height: 171px;
     background: #fff;
     position: absolute;
     top: 58px;
@@ -324,7 +324,7 @@
     top: 36px;
     left:100%;
     right:100%;
-    border-bottom: 3px solid #008aff;
+    border-bottom: 3px solid #6748c1;
     transition: all 0.25s ease-out;
     z-index: 1
 }
@@ -336,7 +336,7 @@
     top: 36px;
     left:100%;
     right:100%;
-    border-bottom: 3px solid #008aff;
+    border-bottom: 3px solid #6748c1;
     transition: all 0.25s ease-out;
     z-index: 1
 }
@@ -370,11 +370,11 @@
 }
 
 .header_gnb_list > li > a:hover {
-    color: #008aff;
+    color: #6748c1;
 }
 
 .header_gnb_list > li.on > a {
-    color: #008aff;
+    color: #6748c1;
 }
 
 
@@ -410,7 +410,7 @@
     top: 10px;
     left:100%;
     right:100%;
-    border-bottom: 8px solid #ffe400;
+    border-bottom: 8px solid #ffdf88;
     transition: all 0.25s ease-out;
     z-index: -1;
 }
@@ -571,7 +571,7 @@
 .header_location a {
     float: left;
     padding: 0 38px 0 30px;
-    color: #aac0f1;
+    color: #7386c3;
     font-weight: 300;
     background: url(../image/common/header_location_arr.png) no-repeat right center;
     cursor: default;
@@ -582,7 +582,7 @@
 .header_location span {
     float: left;
     padding: 0 30px;
-    color: #0084e1
+    color: #6748c1
 }
 
 .header_location span:last-child {
@@ -610,7 +610,7 @@
     left: 0;
     width: 100%;
     height: 0;
-    background-color: #2b64ce;
+    background-color: #6748c1;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -869,7 +869,7 @@
     margin-top: 35px;
     border: 0;
     border-radius: 100%;
-    background: url(../image/main/main_arr_right.png) no-repeat center center #00c7ff;
+    background: url(../image/main/main_arr_right.png) no-repeat center center #6748c1;
 }
 
 #main_leaflet {
@@ -910,7 +910,7 @@
     border: 0;
     background: none;
     font-size: 14px;
-    color: #00c7ff;
+    color: #6748c1;
     font-weight: bold;
     position: relative;
     bottom: 0;

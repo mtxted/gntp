@@ -263,6 +263,10 @@ textarea {
     font: inherit; /* 1 */
     margin: 0; /* 2 */
 }
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: 1px solid #000;
+}
 
 /**
  * Restore the font weight unset by the previous rule.

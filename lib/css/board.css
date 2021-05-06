@@ -156,6 +156,12 @@
     border-radius: 3px;
 }
 
+.tb_style_02 .select_wrap.select_time {
+    width: 120px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .tb_style_02 .selectric {
     background: #fff;
 }
@@ -193,7 +199,7 @@
 
 .board_list td.td_num {
     width: 50px;
-    color: #0084ff;
+    color: #6748c1;
     font-weight: bold;
 }
 
@@ -221,7 +227,7 @@
 }
 
 .board_list td.td_subject a:hover {
-    color: #0084ff;
+    color: #6748c1;
     transition: all 0.2s ease;
 }
 
@@ -242,7 +248,7 @@
 }
 
 .board_list td.td_reply.finish {
-    color: #0084ff;
+    color: #6748c1;
 }
 
 .board_list td.td_name {
@@ -297,7 +303,7 @@
 }
 
 .pagenation_wrap .pagenation_current .current {
-    color: #236fe2;
+    color: #6748c1;
 }
 
 .pagenation_wrap .pagenation_btn span {
@@ -315,7 +321,7 @@
 }
 
 .pagenation_wrap .pagenation_btn:hover {
-    border-color: #236fe2;
+    border-color: #6748c1;
 }
 
 .pagenation_wrap .pagenation_btn.prev span {
@@ -407,9 +413,9 @@
 }
 
 .board_btn_wrap button:hover {
-    background: #0084ff;
+    background: #6748c1;
     color: #fff;
-    border: 1px solid #0084ff;
+    border: 1px solid #6748c1;
     transition: all 0.2s ease;
 }
 
@@ -674,8 +680,8 @@
 }
 
 .tb_style_03 td .btn_rsv:hover {
-    background: #268eff;
-    border-color: #268eff;
+    background: #6748c1;
+    border-color: #6748c1;
     transition: 0.2s all ease;
     color: #fff;
 }
@@ -824,7 +830,7 @@
 .pop_wrap .pop_common {
     padding: 4px;
     border-radius: 3px;
-    background: #0090ff;
+    background: #6748c1;
 }
 .pop_wrap .pop_common .pop_tit {
     height: 40px;
@@ -835,7 +841,7 @@
     font-weight: 300;
 }
 .pop_wrap .pop_common .pop_body {
-    border: 1px solid #237af9;
+    border: 1px solid #6748c1;
     background: #fff;
 }
 .pop_wrap .pop_common .pop_body .pop_btns {
@@ -857,10 +863,10 @@
     min-width: 130px;
     height: 44px;
     padding: 4px;
-    border: 1px solid #4993ff;
+    border: 1px solid #6748c1;
     border-radius: 4px;
     background: #fff;
-    color: #4993ff;
+    color: #fff;
     font-size: 15px;
 }
 .pop_wrap .pop_common .pop_body .pop_btns .pop_btns .btn_next {
@@ -895,16 +901,16 @@
     height: 40px;
     padding: 3px;
     border-radius: 3px;
-    background: #268eff;
-    border: 1px solid #268eff;
+    background: #6748c1;
+    border: 1px solid #6748c1;
     color: #fff;
     font-size: 13px;
     transition: all 0.2s ease;
 }
 .pop_wrap .pop_common .pop_body .btn_action:hover {
-    color: #268eff;
+    color: #6748c1;
     background: #fff;
-    border: 1px solid #268eff;
+    border: 1px solid #6748c1;
     transition: all 0.2s ease;
 }
 .pop_wrap .pop_common .pop_body .btn_action.st2 {
@@ -1089,7 +1095,7 @@
 .tb_pop_data .selectric-items .selected,
 .tb_data .selectric-items li:hover,
 .tb_data .selectric-items .selected {
-    color: #4993ff;
+    color: #6748c1;
 }
 
 .tb_pop_data .selectric-items li:hover,
@@ -1176,7 +1182,7 @@
     height: 34px;
     border: 0;
     border-radius: 2px;
-    background: #4993ff;
+    background: #6748c1;
     transition: background 0.2s;
 }
 
@@ -1373,7 +1379,7 @@
     width: 38px;
     height: 38px;
     border: 0;
-    background-color: #4993ff;
+    background-color: #6748c1;
 }
 
 .pop_body_dark .pop_monitoring_option .select_wrap {

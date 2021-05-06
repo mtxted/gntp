@@ -100,6 +100,8 @@
             <ul class="depth2">
               <li><a href="../practice/reservation_list.html">예약 신청 현황</a></li>
               <li><a href="../practice/reservation_write.html">예약 신청서 작성</a></li>
+              <li><a href="../practice/dataset.html">데이터셋</a></li>
+              <li><a href="../practice/dataset_list.html">데이터셋 목록</a></li>
             </ul>
           </li>
           <li>
@@ -146,6 +148,8 @@
             <ul class="depth2">
               <li><a href="../practice/reservation_list.html">예약 신청 현황</a></li>
               <li><a href="../practice/reservation_write.html">예약 신청서 작성</a></li>
+              <li><a href="../practice/dataset.html">데이터셋</a></li>
+              <li><a href="../practice/dataset_list.html">데이터셋 목록</a></li>
             </ul>
           </li>
           <li>
@@ -204,21 +208,33 @@
       <ul>
         <li>
           <input type="text" class="rsv_input_01" placeholder="MM/DD/YY">
-          <img src="../../lib/image/contest/table_button_calendar.png" alt="" class="table_button_calendar" style="display: none;">
-          <img src="../../lib/image/contest/search_box_img.png" alt="" class="select_img">
-          <img src="../../lib/image/contest/search_box_img_open.png" alt="" class="select_img_open">
+          <div class="select_wrap">
+            <select name="" id="" class="">
+              <option value="">01:00</option>
+              <option value="">02:00</option>
+            </select>
+          </div>
           &nbsp;
           ~
           &nbsp;
           <input type="text" class="rsv_input_01" placeholder="MM/DD/YY">
-          <img src="../../lib/image/contest/table_button_calendar.png" alt="" class="table_button_calendar table_button_calendar_02" style="display: none;">
-          <img src="../../lib/image/contest/search_box_img.png" alt="" class="select_img_02">
-          <img src="../../lib/image/contest/search_box_img_open.png" alt="" class="select_img_open_02">
+          <div class="select_wrap">
+            <select name="" id="" class="">
+              <option value="">01:00</option>
+              <option value="">02:00</option>
+            </select>
+          </div>
         </li>
         <li>
           <input type="text" class="rsv_input_02" placeholder="ID">
-          <img src="../../lib/image/contest/search_box_img_big.png" alt="" class="select_big_01">
-          <img src="../../lib/image/contest/search_box_img_big_open.png" alt="" class="select_big_open_01">
+          <div class="select_wrap select_status">
+            <select name="" id="" class="">
+              <option value="">실행중</option>
+              <option value="">대기</option>
+              <option value="">반려</option>
+              <option value="">만료</option>
+            </select>
+          </div>
         </li>
         <li>
           <button type="button" class="contest_button">검색</button>
