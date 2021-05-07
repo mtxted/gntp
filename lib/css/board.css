@@ -364,6 +364,24 @@
     border-bottom: 1px solid #0a2348;
 }
 
+.file_wrap a {
+    color: #606c7f;
+    display: inline-block;
+}
+
+.file_wrap > a > img {
+    vertical-align: middle;
+}
+
+.file_wrap > a > p {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.file_wrap > a > p:before {
+    display: none;
+}
+
 .file_wrap p {
     margin: 0;
     padding-left: 10px;
@@ -391,8 +409,6 @@
     margin-left: 60px;
     display: inline-block;
     vertical-align: middle;
-    position: relative;
-    top: 5px;
 }
 
 .board_btn_wrap {
