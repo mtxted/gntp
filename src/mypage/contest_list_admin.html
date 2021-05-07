@@ -194,7 +194,8 @@
   <div class="header_location">
     <h2 class="layout_screen-out">Site Location</h2>
     <div class="layout_inner layout_clearfix js_location">
-      <span>실습자 회원가입</span>
+      <a href="javascript:void(0)">마이페이지</a>
+      <span>공모전 신청현황</span>
     </div>
   </div><!-- //header_location -->
 
@@ -202,126 +203,90 @@
 
 <section id="contetns">
   <div class="layout_inner">
-    <div class="join_wrap">
-      <div class="join_tit">
-        <img src="../../lib/image/mypage/join_ico_trainee.png" alt=""> 실습자 회원가입
-      </div>
+    <div class="top_tab js_tab">
+      <a href="mypage_admin.html"><span>내 정보</span></a>
+      <a href="password_admin.html"><span>비밀번호 변경</span></a>
+      <a href="contest_list_admin.html" class="on"><span>공모전 신청현황</span></a>
+    </div>
 
-      <div class="join_box_wrap">
-        <table class="tb_style_02">
-          <colgroup>
-            <col style="width:15%">
-            <col style="width:35%">
-            <col style="width:15%">
-            <col style="width:35%">
-          </colgroup>
-            <tr>
-              <th>이름</th>
-              <td>
-                <input type="text" class="input_style_02" placeholder="이름을 입력해주세요.">
-              </td>
-              <th>아이디</th>
-              <td>
-                <input type="text" class="input_style_05" placeholder="아이디를 입력해주세요.">
-                <button type="button" class="btn_id_chk" id="id_chk">중복확인</button>
-              </td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td>
-                <input type="password" class="input_style_02" placeholder="비밀번호를 입력해주세요.">
-              </td>
-              <th>비밀번호 확인</th>
-              <td>
-                <input type="password" class="input_style_02" placeholder="비밀번호를 한번 더 입력해주세요.">
-              </td>
-            </tr>
-            <tr>
-              <th>학교(회사명)</th>
-              <td>
-                <div class="select_wrap">
-                  <select name="" id="" class="">
-                    <option value="">학교(회사명) 선택</option>
-                    <option value="">창원대학교</option>
-                  </select>
-                </div>
+    <h3 class="board_tit">나의 공모전 신청 검색</h3>
+    <div class="search_box">
+      <ul>
+        <li>
+          <div class="select_wrap contest_status">
+            <select name="" id="" class="">
+              <option value="">상태</option>
+              <option value="">접수완료</option>
+            </select>
+          </div>
 
-              </td>
-              <th>학과(부서)</th>
-              <td>
-                <div class="select_wrap">
-                  <select name="" id="">
-                    <option value="">학과(부서) 선택</option>
-                    <option value="">컴퓨터공학</option>
-                  </select>
-                </div>
-              </td>
-            </tr>
-          <tr>
-            <th>학번(사번)</th>
-            <td>
-              <input type="text" class="input_style_02" placeholder="학번을 입력해주세요.">
-            </td>
-            <th>직업</th>
-            <td>
-              <div class="select_wrap">
-                <select name="" id="">
-                  <option value="">직업 선택</option>
-                  <option value="">기타</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th>이메일</th>
-            <td>
-              <input type="text" class="input_style_02" placeholder="이메일을 입력해주세요.">
-            </td>
-            <th>생년월일</th>
-            <td>
-              <div class="select_wrap select_year">
-                <select name="" id="">
-                  <option value="">연도</option>
-                  <option value="">2021년</option>
-                  <option value="">2020년</option>
-                </select>
-              </div>
+        </li>
+        <li>
+          <input type="text" placeholder="검색어를 입력해주세요." class="contest_input">
+        </li>
+        <li>
+          <button type="button" class="contest_button">검색</button>
+        </li>
+      </ul>
+    </div>
 
-              <div class="select_wrap select_month">
-                <select name="" id="">
-                  <option value="">월</option>
-                  <option value="">1월</option>
-                  <option value="">2월</option>
-                </select>
-              </div>
+    <h3 class="board_tit">나의 공모전 신청 목록</h3>
+    <div class="vm_use_list">
+      <table class="tb_style_03">
+        <tr>
+          <th class="tb_num">NO</th>
+          <th>공모전 &middot; 경진대회명</th>
+          <th class="tb_use">신청일</th>
+          <th class="tb_use">신청 현황</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td class="txt_left" onclick="location.href='../contest/contest_view.html'" style="cursor:pointer"><span class="blue">D-38</span> 2021 빅데이터 플랫폼 아이디어 공모전</td>
+          <td>2021.03.01</td>
+          <td><span class="finish">접수완료</span></td>
+        </tr>
 
-              <div class="select_wrap select_day">
-                <select name="" id="">
-                  <option value="">일</option>
-                  <option value="">1일</option>
-                  <option value="">2일</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th style="border-right: 1px solid #e4e8ec;">연락처</th>
-            <td colspan="3">
-              <input type="text" class="input_style_02" placeholder="연락처를 입력해주세요.">
-            </td>
-          </tr>
-        </table>
+        <tr>
+          <td>2</td>
+          <td class="txt_left"><span class="orange">D-8</span> 2021 빅데이터 셰어 플랫폼 아이디어 공모전</td>
+          <td>2021.03.01</td>
+          <td><span class="wait">접수대기</span></td>
+        </tr>
 
-        <div class="btn_wrap">
-          <button class="btn_cancel" onclick="location.href='login.html'">취소</button>
-          <button class="btn_summit" onclick="location.href='join_finish_trainee.html'">가입신청</button>
+        <tr>
+          <td>3</td>
+          <td class="txt_left"><span class="orange">D-8</span> 2021 빅데이터 플랫폼 아이디어 공모전</td>
+          <td>2021.03.01</td>
+          <td><span class="wait">접수대기</span></td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td class="txt_left"><span class="green">D-18</span> 2021 빅데이터 플랫폼 아이디어 공모전</td>
+          <td>2021.03.01</td>
+          <td><span class="finish">접수완료</span></td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td class="txt_left"><span class="green">D-18</span> 2021 빅데이터 플랫폼 아이디어 공모전</td>
+          <td>2021.03.01</td>
+          <td><span class="finish">접수완료</span></td>
+        </tr>
+      </table>
+      <div class="pagenation_wrap" style="margin-top: 0;">
+        <div class="pagenation_inner">
+          <a href="#" class="pagenation_btn first"><span>First</span></a>
+          <a href="#" class="pagenation_btn prev"><span>Prev</span></a>
+          <div class="pagenation_current">
+            <span class="current">1- 5</span>
+            <span>of 40</span>
+          </div>
+          <a href="#" class="pagenation_btn next"><span>Next</span></a>
+          <a href="#" class="pagenation_btn last"><span>Last</span></a>
         </div>
-      </div><!-- //join_box_wrap -->
-
-
-    </div> <!-- //login_wrap -->
-
-
+      </div>
+    </div>
   </div><!-- //layout_inner -->
 </section><!-- //#contetns -->
 
@@ -350,56 +315,33 @@
     </div>
 
     <div class="select_box_wrap">
-                <div class="select_wrap">
-                    <select name="" id="" class="">
-                        <option value="">전국 TP 사이트</option>
-                        <option value="">전국 #1</option>
-                        <option value="">전국 #2</option>
-                        <option value="">전국 #3</option>
-                        <option value="">전국 #4</option>
-                        <option value="">전국 #5</option>
-                    </select>
-                </div>
+      <div class="select_wrap">
+        <select name="" id="" class="">
+          <option value="">전국 TP 사이트</option>
+          <option value="">전국 #1</option>
+          <option value="">전국 #2</option>
+          <option value="">전국 #3</option>
+          <option value="">전국 #4</option>
+          <option value="">전국 #5</option>
+        </select>
+      </div>
 
-                <div class="select_wrap">
-                    <select name="" id="" class="">
-                        <option value="">패밀리 사이트</option>
-                        <option value="">패밀리 사이트 #1</option>
-                        <option value="">패밀리 사이트 #2</option>
-                        <option value="">패밀리 사이트 #3</option>
-                        <option value="">패밀리 사이트 #4</option>
-                        <option value="">패밀리 사이트 #5</option>
-                    </select>
-                </div>
-            </div>
+      <div class="select_wrap">
+        <select name="" id="" class="">
+          <option value="">패밀리 사이트</option>
+          <option value="">패밀리 사이트 #1</option>
+          <option value="">패밀리 사이트 #2</option>
+          <option value="">패밀리 사이트 #3</option>
+          <option value="">패밀리 사이트 #4</option>
+          <option value="">패밀리 사이트 #5</option>
+        </select>
+      </div>
+    </div>
   </div>
 </footer>
 
-<div class="pop_wrap ui-draggable ui-draggable-handle pop_chk" id="popupIDchk" style="width:310px;">
-  <div class="pop_common">
-    <div class="pop_body">
-      <div class="pop_cont pop_cont_scroll">
-        <p class="vmchk_txt">사용 가능한 아이디입니다.</p>
-      </div><!-- pop_cont -->
-      <div class="pop_btns">
-        <button type="button" class="btn_action">취소</button>
-        <button type="button" class="btn_action">사용</button>
-      </div>
-    </div><!-- pop_body -->
-  </div><!-- popup -->
-</div><!-- popup -->
 
 <script src="../../lib/js/jquery.script.js"></script>
-
-<script>
-  $('#id_chk').click(function (){
-    $('#popupIDchk').show();
-  })
-
-  $('.btn_action').click(function (){
-    $('#popupIDchk').hide();
-  })
-</script>
 
 </body>
 </html>

@@ -222,7 +222,8 @@
             </td>
             <th>아이디</th>
             <td>
-              <input type="text" class="input_style_02" placeholder="아이디를 입력해주세요.">
+              <input type="text" class="input_style_05" placeholder="아이디를 입력해주세요.">
+              <button type="button" class="btn_id_chk" id="id_chk">중복확인</button>
             </td>
           </tr>
           <tr>
@@ -290,6 +291,7 @@
 
 
   </div><!-- //layout_inner -->
+
 </section><!-- //#contetns -->
 
 
@@ -342,8 +344,31 @@
   </div>
 </footer>
 
+<div class="pop_wrap ui-draggable ui-draggable-handle pop_chk" id="popupIDchk" style="width:310px;">
+  <div class="pop_common">
+    <div class="pop_body">
+      <div class="pop_cont pop_cont_scroll">
+        <p class="vmchk_txt">사용 가능한 아이디입니다.</p>
+      </div><!-- pop_cont -->
+      <div class="pop_btns">
+        <button type="button" class="btn_action">취소</button>
+        <button type="button" class="btn_action">사용</button>
+      </div>
+    </div><!-- pop_body -->
+  </div><!-- popup -->
+</div><!-- popup -->
 
 <script src="../../lib/js/jquery.script.js"></script>
+
+<script>
+  $('#id_chk').click(function (){
+    $('#popupIDchk').show();
+  })
+
+  $('.btn_action').click(function (){
+    $('#popupIDchk').hide();
+  })
+</script>
 
 </body>
 </html>

@@ -194,7 +194,8 @@
   <div class="header_location">
     <h2 class="layout_screen-out">Site Location</h2>
     <div class="layout_inner layout_clearfix js_location">
-      <span>실습자 회원가입</span>
+      <a href="javascript:void(0)">마이페이지</a>
+      <span>내 정보</span>
     </div>
   </div><!-- //header_location -->
 
@@ -202,11 +203,14 @@
 
 <section id="contetns">
   <div class="layout_inner">
-    <div class="join_wrap">
-      <div class="join_tit">
-        <img src="../../lib/image/mypage/join_ico_trainee.png" alt=""> 실습자 회원가입
-      </div>
+    <div class="top_tab js_tab">
+      <a href="mypage_admin.html" class="on"><span>내 정보</span></a>
+      <a href="password_admin.html"><span>비밀번호 변경</span></a>
+      <a href="contest_list_admin.html"><span>공모전 신청현황</span></a>
+    </div>
 
+    <h3 class="board_tit">내 정보 <button type="button" class="btn_modify">정보 수정</button></h3>
+    <div class="join_wrap mypage_wrap">
       <div class="join_box_wrap">
         <table class="tb_style_02">
           <colgroup>
@@ -215,114 +219,126 @@
             <col style="width:15%">
             <col style="width:35%">
           </colgroup>
-            <tr>
-              <th>이름</th>
-              <td>
-                <input type="text" class="input_style_02" placeholder="이름을 입력해주세요.">
-              </td>
-              <th>아이디</th>
-              <td>
-                <input type="text" class="input_style_05" placeholder="아이디를 입력해주세요.">
-                <button type="button" class="btn_id_chk" id="id_chk">중복확인</button>
-              </td>
-            </tr>
-            <tr>
-              <th>비밀번호</th>
-              <td>
-                <input type="password" class="input_style_02" placeholder="비밀번호를 입력해주세요.">
-              </td>
-              <th>비밀번호 확인</th>
-              <td>
-                <input type="password" class="input_style_02" placeholder="비밀번호를 한번 더 입력해주세요.">
-              </td>
-            </tr>
-            <tr>
-              <th>학교(회사명)</th>
-              <td>
-                <div class="select_wrap">
-                  <select name="" id="" class="">
-                    <option value="">학교(회사명) 선택</option>
-                    <option value="">창원대학교</option>
-                  </select>
-                </div>
-
-              </td>
-              <th>학과(부서)</th>
-              <td>
-                <div class="select_wrap">
-                  <select name="" id="">
-                    <option value="">학과(부서) 선택</option>
-                    <option value="">컴퓨터공학</option>
-                  </select>
-                </div>
-              </td>
-            </tr>
           <tr>
-            <th>학번(사번)</th>
+            <th>아이디</th>
             <td>
-              <input type="text" class="input_style_02" placeholder="학번을 입력해주세요.">
+              <span class="mypage_info">admin010</span>
             </td>
-            <th>직업</th>
+            <th>권한</th>
             <td>
-              <div class="select_wrap">
-                <select name="" id="">
-                  <option value="">직업 선택</option>
-                  <option value="">기타</option>
-                </select>
-              </div>
+              <span class="mypage_info">관리자</span>
+            </td>
+          </tr>
+          <tr>
+            <th>이름</th>
+            <td>
+              <span class="mypage_info">관리자이름</span>
+            </td>
+            <th>학교(소속)</th>
+            <td>
+              <span class="mypage_info">창원대학교</span>
+            </td>
+          </tr>
+          <tr>
+            <th>학과(부서)</th>
+            <td>
+              <span class="mypage_info">컴퓨터공학</span>
+            </td>
+            <th>관리자 구분</th>
+            <td>
+              <span class="mypage_info">교수</span>
             </td>
           </tr>
           <tr>
             <th>이메일</th>
             <td>
-              <input type="text" class="input_style_02" placeholder="이메일을 입력해주세요.">
+              <span class="mypage_info">hong@gntp.ac.kr</span>
             </td>
-            <th>생년월일</th>
+            <th>연락처</th>
             <td>
-              <div class="select_wrap select_year">
-                <select name="" id="">
-                  <option value="">연도</option>
-                  <option value="">2021년</option>
-                  <option value="">2020년</option>
-                </select>
-              </div>
-
-              <div class="select_wrap select_month">
-                <select name="" id="">
-                  <option value="">월</option>
-                  <option value="">1월</option>
-                  <option value="">2월</option>
-                </select>
-              </div>
-
-              <div class="select_wrap select_day">
-                <select name="" id="">
-                  <option value="">일</option>
-                  <option value="">1일</option>
-                  <option value="">2일</option>
-                </select>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <th style="border-right: 1px solid #e4e8ec;">연락처</th>
-            <td colspan="3">
-              <input type="text" class="input_style_02" placeholder="연락처를 입력해주세요.">
+              <span class="mypage_info">010-1234-5678</span>
             </td>
           </tr>
         </table>
-
-        <div class="btn_wrap">
-          <button class="btn_cancel" onclick="location.href='login.html'">취소</button>
-          <button class="btn_summit" onclick="location.href='join_finish_trainee.html'">가입신청</button>
-        </div>
       </div><!-- //join_box_wrap -->
-
-
     </div> <!-- //login_wrap -->
 
+    <h3 class="board_tit">가상 실습실 이용 내역</h3>
+    <div class="vm_use_list">
+      <table class="tb_style_03">
+        <tr>
+          <th class="tb_num">NO</th>
+          <th class="tb_ip">접속 IP</th>
+          <th class="tb_name">강의명</th>
+          <th>가상 실습실 접속시간</th>
+          <th class="tb_teacher">담당자</th>
+          <th class="tb_use">사용 시간</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>10.39.121.10</td>
+          <td>R 과정</td>
+          <td>2021.01.01 12:00 ~ 2021.01.01 14:35</td>
+          <td>고길동 교수</td>
+          <td>2시간 35분</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>10.39.121.10</td>
+          <td>R 과정</td>
+          <td>2021.01.01 12:00 ~ 2021.01.01 14:35</td>
+          <td>홍장미 교수</td>
+          <td>2시간 35분</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>10.39.121.10</td>
+          <td>AI 중급</td>
+          <td>2021.01.01 12:00 ~ 2021.01.01 14:35</td>
+          <td>이주화 교수</td>
+          <td>2시간 35분</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>10.39.121.10</td>
+          <td>AI 기초</td>
+          <td>2021.01.01 12:00 ~ 2021.01.01 14:35</td>
+          <td>김명진 교수</td>
+          <td>2시간 35분</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>10.39.121.10</td>
+          <td>AI 기초</td>
+          <td>2021.01.01 12:00 ~ 2021.01.01 14:35</td>
+          <td>나구름 교수</td>
+          <td>2시간 35분</td>
+        </tr>
+      </table>
+      <div class="pagenation_wrap" style="margin-top: 0;">
+        <div class="pagenation_inner">
+          <a href="#" class="pagenation_btn first"><span>First</span></a>
+          <a href="#" class="pagenation_btn prev"><span>Prev</span></a>
+          <div class="pagenation_current">
+            <span class="current">1- 5</span>
+            <span>of 40</span>
+          </div>
+          <a href="#" class="pagenation_btn next"><span>Next</span></a>
+          <a href="#" class="pagenation_btn last"><span>Last</span></a>
+        </div>
+      </div>
+    </div>
+
+
+    <!--실 사용시 빠지는 영역-->
+    <div class="btn_wrap">
+      <button type="button" class="btn_modify" onclick="location.href='mypage.html'" style="width:200px; background: #6748c1">일반유저 마이페이지 가기 버튼</button>
+    </div>
+    <!--//실 사용시 빠지는 영역-->
 
   </div><!-- //layout_inner -->
+
+
 </section><!-- //#contetns -->
 
 
@@ -350,56 +366,33 @@
     </div>
 
     <div class="select_box_wrap">
-                <div class="select_wrap">
-                    <select name="" id="" class="">
-                        <option value="">전국 TP 사이트</option>
-                        <option value="">전국 #1</option>
-                        <option value="">전국 #2</option>
-                        <option value="">전국 #3</option>
-                        <option value="">전국 #4</option>
-                        <option value="">전국 #5</option>
-                    </select>
-                </div>
+      <div class="select_wrap">
+        <select name="" id="" class="">
+          <option value="">전국 TP 사이트</option>
+          <option value="">전국 #1</option>
+          <option value="">전국 #2</option>
+          <option value="">전국 #3</option>
+          <option value="">전국 #4</option>
+          <option value="">전국 #5</option>
+        </select>
+      </div>
 
-                <div class="select_wrap">
-                    <select name="" id="" class="">
-                        <option value="">패밀리 사이트</option>
-                        <option value="">패밀리 사이트 #1</option>
-                        <option value="">패밀리 사이트 #2</option>
-                        <option value="">패밀리 사이트 #3</option>
-                        <option value="">패밀리 사이트 #4</option>
-                        <option value="">패밀리 사이트 #5</option>
-                    </select>
-                </div>
-            </div>
+      <div class="select_wrap">
+        <select name="" id="" class="">
+          <option value="">패밀리 사이트</option>
+          <option value="">패밀리 사이트 #1</option>
+          <option value="">패밀리 사이트 #2</option>
+          <option value="">패밀리 사이트 #3</option>
+          <option value="">패밀리 사이트 #4</option>
+          <option value="">패밀리 사이트 #5</option>
+        </select>
+      </div>
+    </div>
   </div>
 </footer>
 
-<div class="pop_wrap ui-draggable ui-draggable-handle pop_chk" id="popupIDchk" style="width:310px;">
-  <div class="pop_common">
-    <div class="pop_body">
-      <div class="pop_cont pop_cont_scroll">
-        <p class="vmchk_txt">사용 가능한 아이디입니다.</p>
-      </div><!-- pop_cont -->
-      <div class="pop_btns">
-        <button type="button" class="btn_action">취소</button>
-        <button type="button" class="btn_action">사용</button>
-      </div>
-    </div><!-- pop_body -->
-  </div><!-- popup -->
-</div><!-- popup -->
 
 <script src="../../lib/js/jquery.script.js"></script>
-
-<script>
-  $('#id_chk').click(function (){
-    $('#popupIDchk').show();
-  })
-
-  $('.btn_action').click(function (){
-    $('#popupIDchk').hide();
-  })
-</script>
 
 </body>
 </html>

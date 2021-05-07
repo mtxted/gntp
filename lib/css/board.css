@@ -37,6 +37,15 @@
     font-size: 14px;
 }
 
+.input_style_05 {
+    width: 74%;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 3px;
+    border: 1px solid #dadfe3;
+    font-size: 14px;
+}
+
 .tb_style_01 {
     width: 100%;
     margin-top: 15px;
@@ -809,6 +818,7 @@
     margin: 0 auto;
     width: 760px;
     display: none;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
 }
 .pop_wrap:before {
     content: " ";
@@ -821,7 +831,8 @@
     background: rgba(0, 0, 0, 0.7);
 }
 .pop_chk {
-    top: 150px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .pop_chk:before {
     content: " ";

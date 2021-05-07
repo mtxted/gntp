@@ -605,6 +605,23 @@ input:-ms-input-placeholder {color: rgba(136,143,157,0.6);opacity:1}
     background: #6748c1;
 }
 
+.btn_id_chk {
+    width: 25%;
+    height: 40px;
+    border: 1px solid #3a4147;
+    color: #0a2348;
+    background: none;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.btn_id_chk:hover {
+    background: #6748c1;
+    border-color: #6748c1;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
 /*0-3 JOIN FINISH*/
 .join_finish {
     padding: 80px 200px 80px 415px;
