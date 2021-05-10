@@ -192,6 +192,26 @@
     display: none;
 }
 
+.tb_style_02 td a {
+    color: #606c7f;
+    display: inline-block;
+}
+
+.tb_style_02 td a img {
+    vertical-align: middle;
+}
+
+.tb_style_02 td a p {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.view_dataset {
+    padding: 40px 20px;
+    border-bottom: 1px solid #0a2348;
+}
+
+
 .board_list {
     width: 100%;
     border-collapse: collapse;
@@ -667,6 +687,29 @@
 
 .tb_style_03 td .wait {
     color: #ff7e00;
+}
+
+.tb_style_03 td .date {
+    color: #a6adb8;
+}
+
+.tb_style_03 td.num {
+    color: #7a55e4;
+    font-weight: bold;
+}
+
+.tb_style_03 td.sort {
+    color: #606c7f;
+    font-weight: 500;
+}
+
+.tb_style_03 td.date {
+    color: #a6adb8;
+    font-weight: 500;
+}
+
+.tb_style_03 td a {
+    color: #0a2348;
 }
 
 .textarea {
